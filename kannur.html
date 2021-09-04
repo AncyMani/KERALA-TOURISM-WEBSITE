@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KANNUR </title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style the body */
+    body {
+      font-family: cursive;
+      font-style: italic;
+      margin: 0;
+    }
+    
+    /* Header/logo Title */
+  .header {
+        height:100vh;
+      /* padding: 60px;
+      text-align: center;
+      background: #1abc9c;
+      color: white; */
+    } 
+    
+    /* Style the top navigation bar */
+    .navbar {
+      display: flex;
+      background-color: #333;
+      margin-top:-6px;
+    }
+    
+    /* Style the navigation bar links */
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Column container */
+    .row {  
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      flex: 35%;
+      background-color: #f1f1f1;
+      padding: 35px;
+      line-height:30px;
+    }
+    .side p{
+        margin-top:15%;
+    }
+    
+    /* Main column */
+    .main {
+      flex: 60%;
+      background-color: white;
+      padding: 50px; 
+      line-height:25px;
+    }
+    .main h2{
+      margin-top:-2%;
+      background-color: rgb(121, 236, 13);
+      text-align: center;
+      padding:3px;
+    }
+    .main h3{
+      text-align: center;
+    }
+    
+    /* Fake image, just for this example */
+    .fakeimg {
+      background-color:transparent;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+    
+    
+    
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row, .navbar {   
+        flex-direction: column;
+      }
+      .navbar{
+          margin-top:-40%;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    
+    
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="district.html">WHERE TO GO</a>
+      <a href="gallery.html">GALLERY</a>
+      
+    </div>
+    
+    <!-- The flexible grid (content) -->
+    <div class="row">
+      <div class="side">
+        <center><h1> KANNUR </h1></center>
+        <div class="fakeimg" style="height:200px;"><img src="image/KANNURMAP.png" width="250" height="250" ></div><br>
+        <br>
+        <p> Kannur is a coastal city in the south Indian state of Kerala. It was once an ancient trading port. Enduring monuments such as 16th-century St. Angelo Fort, once occupied by European colonial forces, show the city’s significant role in the spice trade. Housed in a former palace, the Arakkal Museum highlights Kerala's one Muslim royal family. The palm-fringed sands of Payyambalam Beach run along Kannur’s western shore </p>      
+    </p>
+         </div>
+      <div class="main">
+        <h2>TOP DESTINATIONS</h2>
+        <h3> ST. ANGELO FORT</h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/st angelo kannur.jpg" width="300" height="200"></div><br>
+        
+        <p> Built by the first Portuguese Viceroy in India, Don Francesco de Almeida (1505), St. Angelo’s Fort is among the most historic sites in Kannur. This massive triangular laterite structure is flanked by gigantic bastions that make for an imposing sight. It changed hands between the Dutch and eventually the British, who would remodel and reequip it into their primary military stronghold in Malabar.
+
+          Mopilla Bay and Dharamadam Island are among the primary attractions here. Mopilla Bay is a natural harbour and the fort offers a wonderful view of it along with a sea wall projecting from the fort separating the rough sea and inland water.  Dharamadam Island, barely 5 acres in area, is 100 m from the mainland and a favourite haunt of tourists. People come to the fort for relaxing strolls and just a brilliant view of the Arabian Sea. </p>
+       <h3> ARAKKAL MUSEUM </h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/ARAKKAL kannur.jpg" width="300" height="200"></div><br>
+        <p> The Arakkal Museum is a museum dedicated to the Arakkal family, the only Muslim royal family in Kerala, India. The museum is actually a section of the Arakkalkettu. The durbar hall section of the palace has been converted into a museum by the Government of Kerala. It was opened in July 2005 after a Rs. 9,000,000 renovation. Although renovated by the government, the Arakkalkettu is still owned by the Arakkal Royal Trust and does not fall under the control of the country's archaeology department, the Archaeological Survey of India. The government had taken a keen interest in preserving the heritage of the Arakkal Family, which had played a prominent role in the history of Malabar. </p>
+        <h3> MAPPILA BAY </h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/mappilabay kannur.jpg" width="300" height="200"></div><br>
+        
+        <p> Mappila Bay is a natural harbor situated at Ayikkara in Kannur Municipal Corporation, Kerala state of South India. On one side of the bay is Fort St. Angelo, built by the Portuguese in the 15th century and the other side is the Arakkal Palace. The bay was famous during the Kolathiri's regime as a commercial harbour that linked Kolathunadu with Lakshadweep and foreign countries, in imports. </p>
+        <br>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    
+    </body>
+    </html>

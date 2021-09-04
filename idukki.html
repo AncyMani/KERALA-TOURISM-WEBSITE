@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IDUKKI </title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style the body */
+    body {
+      font-family: cursive;
+      font-style: italic;
+      margin: 0;
+    }
+    
+    /* Header/logo Title */
+  .header {
+        height:100vh;
+      /* padding: 60px;
+      text-align: center;
+      background: #1abc9c;
+      color: white; */
+    } 
+    
+    /* Style the top navigation bar */
+    .navbar {
+      display: flex;
+      background-color: #333;
+      margin-top:-6px;
+    }
+    
+    /* Style the navigation bar links */
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Column container */
+    .row {  
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      flex: 35%;
+      background-color: #f1f1f1;
+      padding: 35px;
+      line-height:30px;
+    }
+    .side p{
+        margin-top:15%;
+    }
+    
+    /* Main column */
+    .main {
+      flex: 60%;
+      background-color: white;
+      padding: 50px; 
+      line-height:25px;
+    }
+    .main h2{
+      margin-top:-2%;
+      background-color: rgb(121, 236, 13);
+      text-align: center;
+      padding:3px;
+    }
+    .main h3{
+      text-align: center;
+    }
+    
+    /* Fake image, just for this example */
+    .fakeimg {
+      background-color:transparent;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+    
+    
+    
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row, .navbar {   
+        flex-direction: column;
+      }
+      .navbar{
+          margin-top:-40%;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    
+    
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="district.html">WHERE TO GO</a>
+      <a href="gallery.html">GALLERY</a>
+      
+    </div>
+    
+    <!-- The flexible grid (content) -->
+    <div class="row">
+      <div class="side">
+        <center><h1> IDUKKI </h1></center>
+        <div class="fakeimg" style="height:200px;"><img src="image/IDUKKIMAP.jpg" width="250" height="250" ></div><br>
+        <br>
+        <p>Idukki district is a densely forested, mountainous region in the south Indian state of Kerala. In the north, Anamudi mountain towers over Eravikulam National Park, where the rare, blue Neelakurinji flower blooms every 12 years. Nearby, Munnar is a hill station known for its sprawling tea plantations and Tea Museum. Farther south is the vast, curved Idukki Dam and Periyar National Park, a tiger and elephant reserve.   </p>      
+    </p>
+         </div>
+      <div class="main">
+        <h2>TOP DESTINATIONS</h2>
+        <h3>ERAVIKULAM NATIONAL PARK </h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/eravikulamidukki.jpg" width="300" height="200"></div><br>
+        
+        <p>Eravikulam National Park is a 97 km² national park located along the Western Ghats in the Idukki and Ernakulam districts of Kerala in India. Situated between 10º05'N and 10º20' north, and 77º0' and 77º10' east, it is the first national park in Kerala. Eravikulam National Park is administered by the Kerala Department of Forests and Wildlife, Munnar Wildlife Division, which also runs the nearby Mathikettan Shola National Park, Anamudi Shola National Park, Pambadum Shola National Park, Chinnar Wildlife Sanctuary and the Kurinjimala Sanctuary.  </p>
+       <h3>ANAMUDI </h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/ANAMUDI IDUKKI.jpg"></div>
+        <p>Anamudi is a mountain located in Idukki districts of the Indian state of Kerala. It is the highest peak in the Western Ghats and in South India, at an elevation of 2,695 metres and a topographic prominence of 2,479 metres. It lies on the border of Idukki district. The name Anamudi literally translates to "elephant's head" a reference to the resemblance of the mountain to an elephant's head.   </p>
+        <h3> IDUKKI DAM </h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/idukkidam.jpg" width="300" height="200"></div><br>
+        
+        <p> The Idukki Dam is a double curvature Arch dam constructed across the Periyar River in a narrow gorge between two granite hills locally known as Kuravan and Kurathi in Mariyapuram village in Idukki District in Kerala, India. At 168.91 metres, it is one of the highest arch dams in Asia. It is constructed and owned by the Kerala State Electricity Board. It supports a 780 MW hydroelectric power station in Moolamattom, which started generating power on 4 October 1975. The dam type is a concrete, double curvature parabolic, thin arc dam.The Indo-Canadian project was inaugurated by the Prime Minister Indira Gandhi on February 17, 1976.</p>
+        <br>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    
+    </body>
+    </html>

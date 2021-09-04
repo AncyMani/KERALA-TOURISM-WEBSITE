@@ -1,0 +1,184 @@
+*{
+
+    padding: 0;
+
+    margin: 0;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+
+}
+body{
+  background:honeydew;
+}
+
+
+
+.dist-h1{
+    margin-top:150px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-line: overline;
+}
+
+.map-img{
+
+    float: left;
+    width:350px;
+    height: 450px;
+    padding: 0 10px 0 0;
+    margin-right: 10%;
+    
+}
+
+.container-map{
+
+    margin: 15px auto;
+    width: 50%;
+    padding: 8px;
+    margin-left: 5%;
+    
+}
+
+
+.text{
+    text-align: justify;
+    font-family: cursive;
+    font-style: italic;
+    margin-top:20px;
+    margin-right: 100px; 
+    
+
+}
+
+ .map  
+ {
+     
+    margin-top: 100px;
+     border: 2px  solid black; 
+    padding-left: 1200px;
+    border: none;
+    
+
+}    
+
+
+
+ 
+
+    
+ 
+
+
+
+/* Note: If you are using landscape images use 'background-size:auto 100%;'
+ in .textOverImage and 'background-size:auto 110%;' in .textOverImage:hover */
+
+ a{text-decoration:none;}
+
+ /*Add the following compatibility code for IE as you can't animate background-size in IE*/
+ 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+ {
+     .textOverImage{background-size:cover!important;}
+ }
+
+ .textOverImage{
+
+     
+     position:relative;
+     width:300px;
+     height:300px;
+     
+     margin-top:2%;
+     margin-left: 5%;
+     padding: 0 16px;
+    width: 18%;
+    
+    
+    float: left;
+    margin-right: 10px;
+     
+     
+     
+     background-size:100%;
+     background-position:center;
+     transition:0.5s;
+     overflow:hidden;
+     border-radius:4px;
+     box-shadow:0 0 4px #000;
+     
+     
+   } 
+
+
+   .card-ho h1{
+
+    text-align: center;
+    background-color: greenyellow;
+
+   }
+ 
+   
+    
+   
+   .textOverImage:hover{
+     background-size:100%;
+   }
+   
+
+   /* STYLING TEXT IN THE CARD */
+
+  .textOverImage:before{
+   position:absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+   transform:translateY(90%);      /*use transform:translateY(100%); to remove footer*/
+     background-color:rgba(8, 8, 8, 0.3);
+     color:white;
+     padding:0 8px;
+     content:attr(data-title);
+     transition:0.5s 0.1s;
+     color:white;
+     font-weight:bold;
+     font-size:1.5em;
+     text-align: center; 
+
+     
+     
+ } 
+  
+   .textOverImage:after{
+     position:absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+     color:#fff;
+     padding:8px;
+     content:attr(data-text);
+     transition:0.5s;
+     padding-top:2em;
+     margin-top:8px;
+     transform:translateY(100%);
+     opacity:0;
+     text-align: left;
+
+   }
+   
+   .textOverImage:hover:after{
+     transform:translateY(0);
+     transition:0.5s 0.1s;
+     opacity:2;
+     
+   }
+ .textOverImage:hover:before{
+     transform:translateY(0);
+     margin-top:50%;
+     padding:9px;
+     background-color:rgba(0,0,0,0.6);
+     transition:0.5s;
+ }  

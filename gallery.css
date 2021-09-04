@@ -1,0 +1,504 @@
+*{
+
+    padding: 0;
+
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+/* CAROUSEL STYLING */
+
+
+.carousel-item{
+
+    /* height: 100vh;
+
+    min-height:200px; */
+    height: 630px;
+
+    background: no-repeat center center  scroll;
+
+    
+    background-size: cover;
+
+}
+
+
+
+/* NAVIGATION BAR STYLING */
+
+.bg-green{
+
+    background-color: rgb(30, 110, 10);
+
+  }
+.navbar-nav a{
+
+    font-size: 20px;
+
+    text-transform: uppercase;
+
+    font-weight: bolder;
+    
+    border-radius: 50px;
+    padding: 6px;
+    margin-right: 18px;
+
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active,
+
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link
+{
+
+    color: white;
+
+}
+
+ 
+
+.navbar-light .navbar-nav .nav-link
+{
+
+    color:white;
+
+}
+
+.navbar-nav
+{
+
+    text-align: center;
+
+}
+
+.nav-link{
+
+    color: white;
+
+    padding: .2rem 1.5rem;
+
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+
+    color:white !important;
+
+    background: rgba(150, 243, 29, 0.4);
+
+    border-radius: 30px;
+
+
+
+}
+
+
+.w-100
+{
+
+    height: 100vh;
+
+}
+
+
+    
+        .navbar-toggler
+        {
+    
+            padding: 1px 5px;
+            font-size:18px;
+            line-height: 0.3;
+             background:#fff;
+    
+        }
+/* LOGIN AND SIGNUP STYLING */
+
+    .signup-container{
+
+        width:50px;
+
+        left:15%;
+
+    } 
+
+    .login-container{
+
+        width:30%;
+
+        left:15%;
+
+ 
+
+    } 
+
+ 
+
+
+
+
+ 
+
+/* login and signup page */
+
+.login-bg
+{
+    background-size: cover;
+    
+
+}
+
+.login-container{
+    
+    
+    width: 75%;
+    position: relative; 
+
+    top:25vh;
+    
+    font-weight: bolder;
+
+     background: rgb(176, 241, 79); 
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px 0px #000;
+
+}
+
+.signup-bg
+{
+    background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  background-repeat: no-repeat;
+  
+  height: 600px;
+
+    
+}
+
+.signup-container{
+
+    width : 80%;
+    position: relative; 
+
+    top:17vh;
+    
+    font-weight: bolder;
+
+    background: rgb(165, 218, 87);
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px 0px #000;
+
+}
+
+/* login and signup page ends */
+
+
+
+
+
+/* GALLERY STYLING */
+
+
+/*Note: If you are using landscape images use 'background-size:auto 100%;'
+ in .textOverImage and 'background-size:auto 110%;' in .textOverImage:hover*/
+
+a{text-decoration:none;}
+
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+{
+	.textOverImage{background-size:cover!important;}
+}
+.textOverImage{
+    position:relative;
+    width:300px;
+    height:300px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-position:center;
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+    margin-top: 100px;
+  }
+  
+  .textOverImage:hover{
+    background-size:110%;
+  }
+  
+.textOverImage:before{
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+  
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+
+
+
+
+*{
+
+    padding: 0;
+
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    
+
+}
+
+.dist-h1{
+    margin-top:150px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-line: overline;
+}
+
+.map-img{
+
+    float: left;
+    width:350px;
+    height: 450px;
+    padding: 0 10px 0 0;
+    margin-right: 10%;
+    
+}
+
+.container-map{
+
+    margin: 15px auto;
+    width: 50%;
+    padding: 8px;
+    margin-left: 5%;
+    
+}
+
+
+.text{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:20px;
+    margin-right: 100px; 
+    
+
+}
+
+ .map  
+ {
+     
+    margin-top: 100px;
+     border: 2px  solid black; 
+    padding-left: 1200px;
+    border: none;
+    
+
+}       
+
+ 
+
+    
+ 
+
+
+
+/* Note: If you are using landscape images use 'background-size:auto 100%;'
+ in .textOverImage and 'background-size:auto 110%;' in .textOverImage:hover */
+
+ a{text-decoration:none;}
+
+ /*Add the following compatibility code for IE as you can't animate background-size in IE*/
+ 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+ {
+     .textOverImage{background-size:cover!important;}
+ }
+
+ 
+ .textOverImage{
+
+     
+     position:relative;
+     width:200px;
+     height:300px;
+     
+     margin-top: 0.5%;
+     margin-left: 1.1%;
+    
+     padding: 0 -1px;
+     padding:-100%;
+    width: 18%;
+    
+    
+    float: left;
+    margin-right: 10px;
+     
+     
+     
+     background-size:100%;
+     background-position:center;
+     transition:0.5s;
+     overflow:hidden;
+     border-radius:4px;
+     box-shadow:0 0 4px #000;
+     
+     
+   } 
+
+  
+
+   .card-ho h1{
+
+    text-align: center;
+    background-color: greenyellow;
+
+   }
+ 
+   
+    
+   
+   .textOverImage:hover{
+     background-size:100%;
+   }
+   
+
+   /* STYLING TEXT IN THE CARD */
+
+  .textOverImage:before{
+   position:absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+   transform:translateY(90%);      /*use transform:translateY(100%); to remove footer*/
+     background-color:rgba(8, 8, 8, 0.3);
+     color:white;
+     padding:0 8px;
+     content:attr(data-title);
+     transition:0.5s 0.1s;
+     color:white;
+     font-weight:bold;
+     font-size:1.5em;
+     text-align: center; 
+
+     
+     
+ } 
+  
+   .textOverImage:after{
+     position:absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+     color:#fff;
+     padding:8px;
+     content:attr(data-text);
+     transition:0.5s;
+     padding-top:2em;
+     margin-top:8px;
+     transform:translateY(100%);
+     opacity:0;
+     text-align: left;
+
+   }
+   
+   .textOverImage:hover:after{
+     transform:translateY(0);
+     transition:0.5s 0.1s;
+     opacity:2;
+     
+   }
+ .textOverImage:hover:before{
+     transform:translateY(0);
+     margin-top:50%;
+     padding:9px;
+     background-color:rgba(0,0,0,0.6);
+     transition:0.5s;
+ }  
+
+
+
+
+
+/* FOOTER STYLING */
+
+
+ .bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+ @media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+} 

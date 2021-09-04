@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KOTTAYAM </title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style the body */
+    body {
+      font-family: cursive;
+      font-style: italic;
+      margin: 0;
+    }
+    
+    /* Header/logo Title */
+  .header {
+        height:100vh;
+      /* padding: 60px;
+      text-align: center;
+      background: #1abc9c;
+      color: white; */
+    } 
+    
+    /* Style the top navigation bar */
+    .navbar {
+      display: flex;
+      background-color: #333;
+      margin-top:-6px;
+    }
+    
+    /* Style the navigation bar links */
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Column container */
+    .row {  
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      flex: 35%;
+      background-color: #f1f1f1;
+      padding: 35px;
+      line-height:30px;
+    }
+    .side p{
+        margin-top:15%;
+    }
+    
+    /* Main column */
+    .main {
+      flex: 60%;
+      background-color: white;
+      padding: 50px; 
+      line-height:25px;
+    }
+    .main h2{
+      margin-top:-2%;
+      background-color: rgb(255, 153, 0);
+      text-align: center;
+      padding:3px;
+    }
+    .main h3{
+      text-align: center;
+    }
+    
+    /* Fake image, just for this example */
+    .fakeimg {
+      background-color:transparent;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+    
+    
+    
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row, .navbar {   
+        flex-direction: column;
+      }
+      .navbar{
+          margin-top:-40%;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    
+    
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="district.html">WHERE TO GO</a>
+      <a href="gallery.html">GALLERY</a>
+      
+    </div>
+    
+    <!-- The flexible grid (content) -->
+    <div class="row">
+      <div class="side">
+        <center><h1> KOTTAYAM </h1></center>
+        <div class="fakeimg" style="height:200px;"><img src="image/kottayammap.jpg" width="250" height="250" ></div><br>
+        <br>
+        <p> Kottayam, IPA: is a city in the Indian state of Kerala. Flanked by the Western Ghats on the east and the Vembanad Lake and paddy fields of Kuttanad on the west, Kottayam is a place that is known for extraordinary qualities. It is the district headquarters of Kottayam district, located in south-west Kerala.   </p>      
+    </p>
+         </div>
+      <div class="main">
+        <h2>TOP DESTINATIONS</h2>
+        <h3>ILLIKAL KALLU</h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/ILLIKAL KOTTAYAM.jpg" width="300" height="200"></div><br>
+        
+        <p>Illikkal Kallu is a monolith located on top of the Illickal Malaa in the Kottayam district of Kerala, India.The distance from kottayam railway station to illikal kallu is 57km. Situated at around 3400 feet above sea level, Illickal Kallu is a major tourist attraction in Moonnilavu and Thalanadu village of Meenachil taluk. Only one half of the original rock remains, as the other half of the rock has fallen off. The nearest town is Teekoy. Numerous mountain streams originate from this peak and flow down to form the Meenachil River.    </p>
+       <h3> KUMARAKAM BIRD SANCTUARY</h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/Kumarakam bird kottayam.jpg" width="300" height="200"></div><br>
+        <p> Kumarakom Bird Sanctuary is situated at Kumarakom in Kottayam taluk of Kottayam district in the Indian state of Kerala, on the banks of Vembanad Lake. Set in the Kerala Backwaters, the bird sanctuary is a favourite haunt of migratory birds. </p>
+        <h3> MANGO MEADOWS AGRICULTURAL THEME </h3>
+        <div class="fakeimg" style="height:200px;"><img src="image/MANGO Kottayam.jpg" width="300" height="200"></div><br>
+        
+        <p> Mango Meadows is an agricultural theme park in Kaduthuruthy, Kerala, India. With more than 4800 species of plants, including 1900 species of medicinal plants, 700 species of trees, and 900 species of flowering plants, it is one of the most biodiverse places on earth. Rare species like the Ficus alii tree or Ficus maclellandii, Beggar’s bowl or Calabash, Camphor tree or Cinnamomum camphora, Damas tree or Conocarpus lancifolius, Kattupoovarash or Rhododendron arboreum, Rudraksha or Elaeocarpus ganitrus are present in the park.</p>
+        <br>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    
+    </body>
+    </html>

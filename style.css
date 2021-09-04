@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+
+    padding: 0;
+
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+ /* CAROUSEL STYLING */
+
+
+.carousel-item{
+
+    height: 100vh;
+
+    min-height:300px;
+
+    background: no-repeat center center  scroll;
+
+    -webkit-backgroung-size:cover;
+
+    background-size: cover;
+
+}
+
+.carousel-caption {
+
+        position: absolute;
+
+        right: 15%;
+
+        bottom: 15rem;
+
+        left: 15%;
+
+        padding-top: 1.25rem;
+
+        padding-bottom: 5rem;
+
+        color: #fff;
+
+        text-align: center;
+
+    }
+
+    
+
+.carousel-caption h5{
+
+    font-size: 45px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-top:25px;
+
+    
+
+}
+
+.carousel-caption p{
+
+    width:60%;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.0;
+
+    
+
+}
+
+@-webkit-keyframes zoom {
+
+    from {
+
+        -webkit-transform: scale(1,1);
+
+    }
+
+    to {
+
+        -webkit-transform: scale(1.5,1.5);
+
+    }
+
+}
+
+@keyframes zoom {
+
+    from {
+
+        transform: scale(1,1);
+
+    }
+
+    to {
+
+        transform: scale(1.5,1.5);
+
+    }
+
+}
+
+.carousel-inner .carousel-item > img {
+
+    -webkit-animation: zoom 15s;
+
+    animation: zoom 15s infinite;
+
+    
+
+} 
+
+/* NAVIGATION BAR STYLING */
+
+.bg-green{
+
+    background-color: rgb(30, 110, 10);
+
+  }
+.navbar-nav a{
+
+    font-size: 20px;
+
+    text-transform: uppercase;
+    font-family: cursive;
+    
+    
+    border-radius: 50px;
+    padding: 6px;
+    margin-right: 18px;
+
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active,
+
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link
+{
+
+    color: white;
+
+}
+
+ 
+
+.navbar-light .navbar-nav .nav-link
+{
+
+    color:white;
+
+}
+
+.navbar-nav
+{
+
+    text-align: center;
+
+}
+
+.nav-link{
+
+    color: white;
+
+    padding: .2rem 1.5rem;
+
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+
+    color:white !important;
+
+    background: rgba(150, 243, 29, 0.4);
+
+    border-radius: 30px;
+
+
+
+}
+
+
+.w-100
+{
+
+    height: 100vh;
+
+}
+
+
+    
+        .navbar-toggler
+        {
+    
+            padding: 1px 5px;
+            font-size:18px;
+            line-height: 0.3;
+             background:#fff;
+    
+        }
+/* LOGIN AND SIGNUP STYLING */
+
+    .signup-container{
+
+        width:50px;
+
+        left:15%;
+
+    } 
+
+    .login-container{
+
+        width:30%;
+
+        left:15%;
+
+ 
+
+    } 
+
+ 
+
+
+
+
+ 
+
+/* login and signup page */
+
+.login-bg
+{
+    background-size: cover;
+    
+
+}
+
+.login-container{
+    
+    
+    width: 75%;
+    position: relative; 
+
+    top:25vh;
+    
+    font-weight: bolder;
+
+     background: rgb(176, 241, 79); 
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px 0px #000;
+
+}
+
+.signup-bg
+{
+    background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  background-repeat: no-repeat;
+  
+  height: 600px;
+
+    
+}
+
+.signup-container{
+
+    width : 80%;
+    position: relative; 
+
+    top:17vh;
+    
+    font-weight: bolder;
+
+    background: rgb(165, 218, 87);
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px 0px #000;
+
+}
+
+/* login and signup page ends */
+
+
+
+
+
+/* GALLERY STYLING */
+
+
+/*Note: If you are using landscape images use 'background-size:auto 100%;'
+ in .textOverImage and 'background-size:auto 110%;' in .textOverImage:hover*/
+
+a{text-decoration:none;}
+
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+{
+	.textOverImage{background-size:cover!important;}
+}
+.textOverImage{
+    position:relative;
+    width:300px;
+    height:300px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-position:center;
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+    margin-top: 100px;
+  }
+  
+  .textOverImage:hover{
+    background-size:110%;
+  }
+  
+.textOverImage:before{
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+  
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+
+
+
+
+*{
+
+    padding: 0;
+
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    
+
+}
+
+.dist-h1{
+    margin-top:150px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-line: overline;
+}
+
+.map-img{
+
+    float: left;
+    width:350px;
+    height: 450px;
+    padding: 0 10px 0 0;
+    margin-right: 10%;
+    
+}
+
+.container-map{
+
+    margin: 15px auto;
+    width: 50%;
+    padding: 8px;
+    margin-left: 5%;
+    
+}
+
+
+.text{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:20px;
+    margin-right: 100px; 
+    
+
+}
+
+ .map  
+ {
+     
+    margin-top: 100px;
+     border: 2px  solid black; 
+    padding-left: 1200px;
+    border: none;
+    
+
+}       
+
+ 
+
+    
+ 
+
+
+
+/* Note: If you are using landscape images use 'background-size:auto 100%;'
+ in .textOverImage and 'background-size:auto 110%;' in .textOverImage:hover */
+
+ a{text-decoration:none;}
+
+ /*Add the following compatibility code for IE as you can't animate background-size in IE*/
+ 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+ {
+     .textOverImage{background-size:cover!important;}
+ }
+
+ 
+ .textOverImage{
+
+     
+     position:relative;
+     width:200px;
+     height:300px;
+     
+     margin-top: 0.5%;
+     margin-left: 1.1%;
+    
+     padding: 0 -1px;
+     padding:-100%;
+    width: 18%;
+    
+    
+    float: left;
+    margin-right: 10px;
+     
+     
+     
+     background-size:100%;
+     background-position:center;
+     transition:0.5s;
+     overflow:hidden;
+     border-radius:4px;
+     box-shadow:0 0 4px #000;
+     
+     
+   } 
+
+  
+
+   .card-ho h1{
+
+    text-align: center;
+    background-color: greenyellow;
+
+   }
+ 
+   
+    
+   
+   .textOverImage:hover{
+     background-size:100%;
+   }
+   
+
+   /* STYLING TEXT IN THE CARD */
+
+  .textOverImage:before{
+   position:absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+   transform:translateY(90%);      /*use transform:translateY(100%); to remove footer*/
+     background-color:rgba(8, 8, 8, 0.3);
+     color:white;
+     padding:0 8px;
+     content:attr(data-title);
+     transition:0.5s 0.1s;
+     color:white;
+     font-weight:bold;
+     font-size:1.5em;
+     text-align: center; 
+
+     
+     
+ } 
+  
+   .textOverImage:after{
+     position:absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+     color:#fff;
+     padding:8px;
+     content:attr(data-text);
+     transition:0.5s;
+     padding-top:2em;
+     margin-top:8px;
+     transform:translateY(100%);
+     opacity:0;
+     text-align: left;
+
+   }
+   
+   .textOverImage:hover:after{
+     transform:translateY(0);
+     transition:0.5s 0.1s;
+     opacity:2;
+     
+   }
+ .textOverImage:hover:before{
+     transform:translateY(0);
+     margin-top:50%;
+     padding:9px;
+     background-color:rgba(0,0,0,0.6);
+     transition:0.5s;
+ }  
+
+
+/* FOOTER STYLING */
+
+ .content1{
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content1 .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+  }
+  .content1 .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: green;
+  }
+  footer{
+    position: fixed;
+    bottom: 0px;
+    
+    width: 100%;
+    background: #111;
+    
+    
+  }
+  .main-content{
+    display: flex;
+  }
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  .box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+  }
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .left .content .social{
+    margin: 20px 0 0 0;
+  }
+  .left .content .social a{
+    padding: 0 2px;
+  }
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .left .content .social a span:hover{
+    background: #f12020;
+  }
+  .center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .content .fas:hover{
+    background: #f12020;
+  }
+  .center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .center .content .phone{
+    margin: 15px 0;
+  }
+  .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color:rgb(87, 83, 83);
+  }
+  .right form .msg{
+    margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background:#151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+  }
+  .right form input:focus,
+  .right form textarea:focus{
+    outline-color: #3498db;
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btn{
+    margin-top: 10px;
+  }
+  .right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .right form .btn button:hover{
+    background: #000;
+  }
+  .bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+  }
+  .bottom center span{
+    color: #656565;
+  }
+  .bottom center a{
+    color: #f12020;
+    text-decoration: none;
+  }
+  .bottom center a:hover{
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

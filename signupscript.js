@@ -261,7 +261,7 @@ function getPasswordStrength(password){
 
   passwordStrengthSpans[0].innerText = "Medium";
 
-  passwordStrengthSpans[0].style.color = "#111";
+  passwordStrengthSpans[0].style.color = "00FFFF";
 
   passwordStrengthSpans[1].style.background = "#e6da44";
 
